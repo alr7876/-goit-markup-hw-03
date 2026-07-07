@@ -149,6 +149,7 @@ address {
     font-weight: 700;
     font-size: 56px;
     line-height: 107%;
+    letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
 
@@ -202,6 +203,13 @@ address {
     width: calc((100% - 72px) / 4);
 }
 
+.our-features h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em
+}
+
 .our-features p{
     font-weight: 400;
     font-size: 16px;
@@ -233,9 +241,22 @@ address {
 
 .our-team-title {
     margin-bottom:  72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
 }
 
 .our-team h3, .our-team h2{
+    text-align: center;
+}
+
+.our-team h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -251,6 +272,11 @@ address {
 .our-potfolio-title {
     text-align: center;
     padding: 120px 0 72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
 }
 
 .our-potfolio-list {
