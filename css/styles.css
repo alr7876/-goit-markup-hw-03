@@ -1,3 +1,5 @@
+
+
 :root {
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -17,10 +19,6 @@
 
 body {
     font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.02em;
     color: var(--navy-blue);
     background: var(--white);
 }
@@ -79,6 +77,10 @@ address {
 .header-nav {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em
 }
 
 
@@ -101,18 +103,7 @@ address {
 }
 
 .header-logo span {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--iris);
-}
-
-.header-nav a {
-    font-weight: 500;
-    color: var(--navy-blue);
 }
 
 .header-nav-list {
@@ -120,11 +111,11 @@ address {
     gap: 40px;
 }
 
-.header-nav a:hover {
+.header-nav-list a:hover {
     color: var(--ocean);
 }
 
-.header-nav a:active {
+.header-nav-list a:active {
     color: var(--ocean);
     padding-bottom: 20px;
     border-radius: 2px;
@@ -132,6 +123,10 @@ address {
 }
 
 .header-address a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
     font-weight: 400;
     color: var(--slate);
 }
@@ -151,32 +146,21 @@ address {
 }
 
 .hero-title {
-    max-width: 496px;
-    margin: 0 auto;
-    background-color: var(--navy-blue);
-}
-
-.hero-btn {
-    display: block;
-    height: 58px;
-    max-width: 169;
-    margin: 53px auto 0;
-    border: none;
-    border-radius: 4px;
-}
-
-.hero {
-    background: var(--navy-blue);
-    padding-left: ;
-}
-
-.hero h1 {
     font-weight: 700;
     font-size: 56px;
     line-height: 107%;
     text-align: center;
     color: var(--white);
+
+    max-width: 496px;
+    margin: 0 auto;
+    background-color: var(--navy-blue);
 }
+
+.hero {
+    background: var(--navy-blue);
+}
+
 
 .hero-btn {
     letter-spacing: 0.04em;
@@ -186,10 +170,16 @@ address {
     cursor: pointer;
 
     display: block;
-    max-width: 169;
+    width: 169px;
+    height: 56px;
     margin: 53px auto 0;
     border: none;
     border-radius: 4px;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .hero-btn:hover {
@@ -216,6 +206,7 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    letter-spacing: 0.02em;
     color: var(--slate);
 }
 
@@ -253,29 +244,38 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    letter-spacing: 0.02em;
     color: var(--slate);
 }
 
-.our-pottfolio-title {
+.our-potfolio-title {
     text-align: center;
     padding: 120px 0 72px;
 }
 
-.our-pottfolio-list {
+.our-potfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
     padding-bottom: 120px;
 }
 
-.our-pottfolio-item {
+.our-potfolio-item {
     width: calc((100% - 48px) / 3);
 }
 
-.our-pottfolio p {
+.our-potfolio h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+}
+
+.our-potfolio p {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    letter-spacing: 0.02em;
     color: var(--slate);
 }
 
@@ -287,6 +287,9 @@ address {
 
 .footer p {
     font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
     color: var(--cloud);
     text-align: left;
 
@@ -295,6 +298,7 @@ address {
 }
 
 .footer-logo {
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 117%;
@@ -305,12 +309,6 @@ address {
 }
 
 .footer-logo span {
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+
     color: var(--iris);
-    text-decoration: none;
 }
