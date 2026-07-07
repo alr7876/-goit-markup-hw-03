@@ -22,8 +22,25 @@ body {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    background: var(--cloud);
+    background: var(--white);
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
 
 ul, ol {
     list-style: none;
@@ -35,11 +52,40 @@ a {
     text-decoration: none;
 }
 
-.header a { 
+address {
+    font-style: normal;
+}
+
+.header {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em
 }
+
+.header {
+    background-image: linear-gradient(#e7e9e7 1px, transparent 1px),
+            linear-gradient(90deg, #e7e9e7 1px, transparent 1px);
+        background-size: 10px 10px;
+        border-bottom: 2px solid var(--cornflower);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-address {
+    margin-left: auto;
+}
+
 
 .header-logo {
     font-family: var(--second-family);
@@ -49,6 +95,9 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--navy-blue);
+
+    margin-right: 76px;
+
 }
 
 .header-logo span {
@@ -66,11 +115,23 @@ a {
     color: var(--navy-blue);
 }
 
+.header-nav-list {
+    display: flex;
+    gap: 40px;
+}
+
 .header-nav a:hover {
     color: var(--ocean);
 }
 
-.header-address a{
+.header-nav a:active {
+    color: var(--ocean);
+    padding-bottom: 20px;
+    border-radius: 2px;
+    border-bottom: 5px solid var(--ocean);
+}
+
+.header-address a {
     font-weight: 400;
     color: var(--slate);
 }
@@ -79,9 +140,36 @@ a {
     color: var(--ocean);
 }
 
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-container {
+    padding: 188px;
+    background-color: var(--navy-blue);
+}
+
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto;
+    background-color: var(--navy-blue);
+}
+
+.hero-btn {
+    display: block;
+    height: 58px;
+    max-width: 169;
+    margin: 53px auto 0;
+    border: none;
+    border-radius: 4px;
+}
+
 .hero {
     background: var(--navy-blue);
+    padding-left: ;
 }
+
 .hero h1 {
     font-weight: 700;
     font-size: 56px;
@@ -96,11 +184,32 @@ a {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--iris);
     cursor: pointer;
+
+    display: block;
+    max-width: 169;
+    margin: 53px auto 0;
+    border: none;
+    border-radius: 4px;
 }
 
 .hero-btn:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--ocean);
+}
+
+.our-features h2{
+    visibility: hidden;
+}
+
+.our-features-list {
+    display: flex;
+    height: 344px;
+    align-items: center;
+    gap: 24px;
+}
+
+.our-features-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .our-features p{
@@ -110,7 +219,32 @@ a {
     color: var(--slate);
 }
 
-.our-team h3 {
+.our-team {
+    background-color: var(--cloud);
+    padding: 120px 0;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
+    max-width: 1158px;
+    justify-self: center;
+
+}
+
+.our-team-item {
+    width: calc((100% - 72px) / 4);
+    background-color: var(--white);
+    border-bottom: 3px solid var(--cornflower);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.our-team-title {
+    margin-bottom:  72px;
+}
+
+.our-team h3, .our-team h2{
     text-align: center;
 }
 
@@ -122,6 +256,22 @@ a {
     color: var(--slate);
 }
 
+.our-pottfolio-title {
+    text-align: center;
+    padding: 120px 0 72px;
+}
+
+.our-pottfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    padding-bottom: 120px;
+}
+
+.our-pottfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
 .our-pottfolio p {
     font-weight: 400;
     font-size: 16px;
@@ -131,11 +281,17 @@ a {
 
 .footer  {
     background: var(--navy-blue);
+    padding: 100px 0 100px 0;
+    
 }
 
 .footer p {
     font-weight: 400;
     color: var(--cloud);
+    text-align: left;
+
+    margin-top: 16px;
+    max-width: 264px;
 }
 
 .footer-logo {
