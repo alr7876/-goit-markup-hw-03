@@ -61,9 +61,6 @@ address {
 }
 
 .header {
-    background-image: linear-gradient(#e7e9e7 1px, transparent 1px),
-            linear-gradient(90deg, #e7e9e7 1px, transparent 1px);
-        background-size: 10px 10px;
         border-bottom: 2px solid var(--cornflower);
 }
 
@@ -188,13 +185,17 @@ address {
     background: var(--ocean);
 }
 
+
+.our-features {
+    margin: 120px 0;
+}
+
 .our-features h2{
     visibility: hidden;
 }
 
 .our-features-list {
     display: flex;
-    height: 344px;
     align-items: center;
     gap: 24px;
 }
@@ -211,6 +212,8 @@ address {
 }
 
 .our-features p{
+    margin: 8px 0;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -226,7 +229,6 @@ address {
 .our-team-list {
     display: flex;
     gap: 24px;
-    max-width: 1158px;
     justify-self: center;
 
 }
@@ -237,6 +239,21 @@ address {
     border-bottom: 3px solid var(--cornflower);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.our-team-item img {
+    margin: 0;
+    margin-bottom: 32px;  
+}
+
+.our-team-item h3 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.our-team-item p {
+    margin: 0;
+    margin-bottom: 32px;   
 }
 
 .our-team-title {
@@ -269,9 +286,13 @@ address {
     color: var(--slate);
 }
 
+.our-potfolio {
+    padding: 120px 0;
+}
+
 .our-potfolio-title {
     text-align: center;
-    padding: 120px 0 72px;
+    padding: 0 0 72px;
 
     font-weight: 700;
     font-size: 36px;
@@ -283,11 +304,15 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    padding-bottom: 120px;
 }
 
 .our-potfolio-item {
     width: calc((100% - 48px) / 3);
+    border-bottom: var(--cornflower) solid 1px;
+}
+
+.our-potfolio img {
+    margin: 0 0 32px;
 }
 
 .our-potfolio h3 {
@@ -295,6 +320,8 @@ address {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
+
+    margin: 0 0 8px;
 }
 
 .our-potfolio p {
@@ -303,6 +330,8 @@ address {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
+
+    margin: 0 0 32px;
 }
 
 .footer  {
@@ -332,9 +361,10 @@ address {
     text-transform: uppercase;
     color: var(--cloud);
     text-decoration: none;
+
+    margin: 0;
 }
 
 .footer-logo span {
-
     color: var(--iris);
 }
